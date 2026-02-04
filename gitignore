@@ -1,0 +1,14 @@
+# 보안 및 환경 변수
+.env
+*.pem
+*.key
+
+# 가상 환경
+.venv/
+venv/
+
+# Python 캐시 및 빌드
+__pycache__/
+*.py[cod]
+build/
+dist/

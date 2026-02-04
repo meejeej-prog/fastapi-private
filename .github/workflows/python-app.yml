@@ -44,7 +44,7 @@ jobs:
               "sudo docker pull ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest",
               "sudo docker stop fastapi-server || true",
               "sudo docker rm fastapi-server || true",
-              "sudo docker run -d --name fastapi-server -p 80:8000 ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest",
+              "sudo docker run -d --name fastapi-server -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest",
               "sudo docker image prune -f"
             ]' \
             --region ${{ secrets.AWS_REGION }}
